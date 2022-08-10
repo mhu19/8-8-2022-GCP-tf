@@ -55,4 +55,10 @@ resource "google_compute_instance" "vm_instance" {
   }
 }
 
+resource "google_storage_bucket" "tfbucket_example989" {
+  name          = "tfbucket_example989"
+  location      = "US"
+  force_destroy = true
 
+  uniform_bucket_level_access = true
+}

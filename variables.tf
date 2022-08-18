@@ -15,7 +15,7 @@ variable "machinetype" {
 }
 
 variable "machineimage" {
-  default = "debian-cloud/debian-10"
+  default = "debian-cloud/debian-11"
 }
 
 

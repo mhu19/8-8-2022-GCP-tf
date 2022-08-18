@@ -9,3 +9,11 @@ variable "region" {
 variable "zone" {
   default = "us-central1-c"
 }
+
+variable "machineimage" {
+  default = "debian-cloud/debian-10"
+}
+
+variable "machinetype" {
+  default = "f1-micro"
+}

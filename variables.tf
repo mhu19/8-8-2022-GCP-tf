@@ -11,11 +11,11 @@ variable "zone" {
 }
 
 variable "machinetype" {
-  default = "f1-micro"
+  default = "e2-medium"
 }
 
 variable "machineimage" {
-  default = "debian-cloud/debian-10"
+  default = "debian-cloud/debian-11"
 }
 
 

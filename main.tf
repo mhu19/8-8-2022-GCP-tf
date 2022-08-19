@@ -5,9 +5,7 @@ provider "google" {
   zone    = var.zone
 }
 
-resource "google_compute_network" "vpc_network" {
-  name = "terraform-network"
-}
+
 
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-vm-instance"
@@ -20,8 +18,10 @@ resource "google_compute_instance" "vm_instance" {
   }
 
   network_interface {
-    network = google_compute_network.vpc_network.name
+    network = "default"
+
     access_config {
+      // Ephemeral public IP
     }
   }
 }

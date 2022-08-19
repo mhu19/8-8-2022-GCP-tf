@@ -11,7 +11,7 @@ variable "zone" {
 }
 
 variable "machinetype" {
-  default = "n1-standard-4"
+  default = "g2-small"
 }
 
 variable "machineimage" {

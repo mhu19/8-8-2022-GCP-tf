@@ -1,5 +1,5 @@
 variable "project" { 
-  default = "crack-mix-350403"
+  default = "jenkins-terraform-359717"
 }
 
 variable "region" {
